@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Cards Game</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer type="module" src="./js/app.js"></script>
+  </head>
+  <body>
+    <div class="overlay" id="end-game">
+      <div class="overlay-body">
+        <div class="overlay-header">
+          <h2>Congratulations!</h2>
+          <button class="btn overlay-close-btn">&times;</button>
+        </div>
+        <div class="overlay-content">
+          <p>
+            You completed the game in
+            <span class="overlay-moves">00</span> moves and
+            <span class="overlay-time">00:00</span> seconds
+          </p>
+        </div>
+        <div class="overlay-footer">
+          <button class="btn overlay-restart-btn">Play again</button>
+        </div>
+      </div>
+    </div>
+    <div class="overlay" id="start-game">
+      <div class="overlay-body">
+        <div class="overlay-header">
+          <h2>Welcome hunter !</h2>
+        </div>
+        <div class="overlay-content">
+          <p>
+            You must find all the pokemon as quickly and in as few moves as
+            possible.
+          </p>
+          <form class="overlay-form" action="">
+            <div class="form-group">
+              <label for="nickname">Enter a nickname</label>
+              <input
+                type="text"
+                name="nickname"
+                id="nickname"
+                placeholder="Sacha"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  type="radio"
+                  name="difficulty"
+                  id="beginner"
+                  value="beginner"
+                  checked
+                />
+                <label for="beginner">Beginner</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  name="difficulty"
+                  id="intermediate"
+                  value="intermediate"
+                />
+                <label for="intermediate">Intermediate</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  name="difficulty"
+                  id="expert"
+                  value="expert"
+                />
+                <label for="expert">Expert</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="overlay-footer">
+          <button class="btn overlay-play-btn">Play</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="panel" class="panel">
+        <div class="panel-moves panel-item">
+          <span class="title">Moves: </span>
+          <span class="value">0</span>
+        </div>
+        <div class="panel-time panel-item">
+          <span class="title">Time: </span>
+          <span class="value">00:00</span>
+        </div>
+        <div class="panel-best-time panel-item">
+          <span class="title">Best time:</span>
+          <span class="value">00:00</span>
+        </div>
+        <button class="btn panel-restart-btn">Restart</button>
+      </div>
+      <div id="board" class="board">
+        <div class="card">
+          <div class="card-body">
+            <!-- <img src="./images/1.svg" alt="bulbasaur" /> -->
+            <img src="./images/pokeball.png" alt="pokeball" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

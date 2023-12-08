@@ -1,5 +1,7 @@
 # Memory Cards Game
 
+You can test the game here: [https://alban-care.github.io/memory-cards-game/](https://alban-care.github.io/memory-cards-game/)
+
 ## Rules of the game
 
 The game consists of 16 cards, 8 pairs of cards in beginner mode (36 cards in intermediate mode and 64 in expert mode). The cards are placed face down and the player must find matching pairs by turning over the cards 2 at a time. If the cards match, they are deleted. If they don't match, they are returned. The game ends when all pairs have been found.
